@@ -1,0 +1,437 @@
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.main-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+/* ==========================================================================
+    Structure & Defaults
+   ========================================================================== */
+html, body {
+  font-size: 100%;
+  max-width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+}
+
+body {
+  font: 13px/21px "Open Sans", Arial, sans-serif;
+  color: #838383;
+  background-color: #fff;
+  overflow-x:hidden;
+}
+
+a {
+  color: #000;
+  text-decoration: none !important;
+  -webkit-transition: all 200ms ease-in;
+  -moz-transition: all 200ms ease-in;
+  -ms-transition: all 200ms ease-in;
+  -o-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+}
+a:hover {
+  color: #b71c1c;
+}
+  
+
+/* ==========================================================================
+    Header Site Styling
+   ========================================================================== */
+.site-header {
+  position: fixed;
+  min-height: 60px;
+  height: 50px;
+  width: 100%;
+  z-index: 9999;
+  background-color: #4dcb43;
+}
+
+#site_logo {
+  background-image: url(http://i.imgur.com/q0SMHPJ.png);
+  background-repeat: no-repeat;
+  background-position: 5px center;
+  height: 50px;
+  display: block;
+}
+
+.main-menu {
+  position: relative;
+}
+.main-menu ul {
+  position: absolute;
+  width: 100%;
+}
+.main-menu ul li {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+#li_home,
+#li_course{
+  width: 110px;
+}
+#li_session,
+#li_practice,
+#li_ask{
+  width: 180px;
+}
+.main-menu ul li a{
+  color: white;
+  font-weight: 2400;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  display: block;
+}
+.main-menu ul li a.current {
+  background: url(http://i.imgur.com/2TzcMpN.png) no-repeat;
+  background-position: center 27px;
+}
+.toggle-menu {
+  display: none;
+  margin: 15px 35px 0 0;
+  color: white;
+  text-align: right;
+}
+
+.responsive .main-menu {
+  display: none;
+}
+.responsive .main-menu ul li {
+  width: 100%;
+  background-color:#0b6306;
+}
+.responsive .main-menu ul li a {
+  line-height: 40px;
+  padding: 10px 20px 0 0;
+}
+.responsive .main-menu ul li a.current {
+  background-image: none;
+  color: #26b864;
+  border-bottom: 0;
+}
+
+/* ==========================================================================
+    Inner Body Styling
+   ========================================================================== */
+.section-home{
+	height:auto;
+	width:100%;
+	position:relative;
+}
+.slider-body{
+	padding-top:60px;
+	position:relative;
+}
+#course{
+	height:auto;
+	width:100%;
+	position:relative;
+	margin-top:0px;
+}
+#course_block{
+	height:200px;
+	position:relative;
+	background-color:#009900;
+}
+#course_description {
+	text-align:center;
+	color:#fff;
+	margin-top:60px;
+}
+#final_course{
+	text-align:center;
+	color:#fff;
+	margin-top:100px;
+}
+#go_course,
+#session_tutor,
+#session_button,
+#ask_button,
+#go_practice{
+	background:transparent;
+	border:2px #006600 solid;
+	color:#fff;
+	border-radius:0;
+}
+#go_course:hover, 
+#session_tutor:hover, 
+#session_button:hover, 
+#ask_button:hover, 
+#go_practice:hover{
+	background-color:#fff;
+	color:#009900;
+	border:1px #006600 solid;
+	box-shadow:7px 7px 9px #fff;
+}
+#session{
+	height:auto;
+	width:100%;
+	position:relative;
+}
+#session_block1{
+	background-color:#fff;
+	height:200px;
+	padding-top:70px;
+	padding-bottom:50px;
+	position:relative;
+}
+#session_block1 h1{
+	text-align:center;
+	color:#009900;
+}
+#session_block2{
+	height:100px;
+	background-color:#009900;
+	position:relative;
+}
+#session_block3{
+	height:140px;
+	background-color:#fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	position:relative;
+}
+#session_block3 h3{
+	text-align:center;
+	color:#009900;
+}
+#tutor_left, #session_right{
+	color:#fff;
+	text-align:center;
+}
+#tutor_right,
+#session_left{
+	text-align:center;
+	line-height:100px;
+	position:relative;
+}
+#practice{
+	height:auto;
+	width:100%;
+	position:relative;
+}
+#practice_block{
+	height:60px;
+}
+#practice_block2{
+	height:200px;
+	background-color:#009900;
+}
+#practice_description,
+#final_practice{
+	text-align:center;
+	color:#fff;
+}
+#final_practice{
+	line-height:200px;
+}
+#last_section{
+	height:auto;
+	width:100%;
+	position:relative;
+}
+#last_block1{
+	height:40px;
+}
+.asknlearn{
+	height:100px;
+	background-color:#009900;
+	color:#fff;
+}
+#ask_block1{
+	text-align:center;
+	padding-top:15px;
+}
+#last_block3{
+	height:40px;
+}
+#last_block4{
+	height:180px;
+	background-color:#009900;
+	color:#fff;
+	text-align:center;
+}
+
+/* ==========================================================================
+    Footer Site Styling
+   ========================================================================== */
+#footer11{
+	text-align:center;
+	color:#fff;
+}
+#footer12,
+#footer13,
+#footer14{
+	text-align:center;
+	color:#fff;
+}
+#footer12 a{
+	color:#66ff33;
+	text-decoration:none;
+}
+#footer12 a:hover{
+	color:#fff;
+}
+.fa{
+	display:inline-block;
+}
+.social-icons .fa-twitter{
+	color:#1da1f2;
+}
+.social-icons .fa-twitter:hover{
+	color:#00bfff;
+}
+.social-icons .fa-facebook{
+	color:#3b5998;
+}
+.social-icons .fa-facebook:hover{
+	color:#0f3998;
+}
+.social-icons .fa-youtube{
+	color:#cc181e;
+}
+.social-icons .fa-youtube:hover{
+	color:#aa081e;
+}
+#footer2{
+	background-color:#009900;
+}
+#copyright{
+	color:#000;
+	text-align:center;
+}
+  
+/*------------------------------------------------------
+	RESPONSIVE STYLES 
+--------------------------------------------------------*/
+
+		/* Custom */
+
+@media (max-width:1150px){
+	#li_home,
+	#li_course{
+	  width: 100px;
+	}
+	#li_session,
+	#li_practice,
+	#li_ask{
+	  width: 150px;
+	}
+}
+
+		/* Small Sreen */
+		
+@media (max-width: 991px) {
+	.main-menu {
+		display: none;
+	}
+
+	.toggle-menu {
+		display: block;
+	}
+
+	.site-header {
+		padding: 0;
+	}
+	.main-menu {
+		display: none;
+		border-top: 1px solid #2f2f2f;
+		text-align: left;
+	}
+	.main-menu ul li {
+		padding: 0;
+		margin: 0;
+		display: block;
+		border-bottom: 1px solid #2f2f2f;
+	}
+	.main-menu ul li:last-child {
+		border-bottom: 0;
+	}
+	.main-menu ul li a {
+		padding: 20px;
+		color: white;
+		text-transform: uppercase;
+		font-weight: 600;
+		display: block;
+	}
+	.section-home{
+		width:100%;
+		height:auto;
+	}
+	#session_block2{
+		height:120px;
+	}
+	#tutor_right,
+	#session_left{
+		line-height:120px;
+	}
+	#last_section{
+		height:380px;
+	}
+	#last_block4{
+		height:200px;
+	}
+}
+
+		/* Extra Small Screen */
+		
+@media (max-width: 767px) {
+	#final_course{
+		margin-top:0px;
+	}
+	#session_block2{
+		height:260px;
+	}
+	#tutor_right,
+	#session_left{
+		line-height:50px;
+	}
+	#final_practice{
+		line-height:0px;
+	}
+	#last_section{
+		height:650px;
+	}
+	#last_block4{
+		height:470px;
+	}
+}
+
+
+		/* Extra Extra Small Screen */
+		
+@media (max-width: 376px){
+	#session{
+		height:650px;
+	}
+	#session_block2{
+		height:310px;
+	}
+	#practice{
+		height:270px;
+	}
+	#practice_block2{
+		height:210px;
+	}
+}
